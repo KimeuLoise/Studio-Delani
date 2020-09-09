@@ -1,108 +1,208 @@
-h1 {
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  p {
-    text-align: center;
-    font-size: 15px;
-  }
-  .home{
-    background-image: url(../delani-studio/image/backgrounds/h_img.jpg);
-    background-position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    height: 100%;
-    background-position: center center;
-  }
-  img[id="im1"] {
-    margin-left: 46%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-  }
-  img[id="im2"] {
-    margin-left: 49%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-  }
-  div {
-    margin-bottom: 2%;
-  }
-  div[id="3"] {
-    background-image: url(../delani-studio/image/backgrounds/s_image.jpg);
-    background-size: 100%,100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    color:white;
+*{
+  box-sizing: border-box;
+  font-family: serif;
+}
 
+header{
+  text-align: center;
+  color: white;
+  padding-top:17%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  padding: 2px;
+  margin: 5px;
+}
+
+#mouse{
+  padding-top: 14%;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  5%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  div[id="4"] {
-    background-image: url(../delani-studio/image/backgrounds/c_image.jpg);
-    background-size: 100%,100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
+  10% {
+    transform: translateY(-50px);
   }
-  input {
-    border-radius: 5px;
+  50% {
+      transform: translateY(-50px);
   }
-  input[id="name"] {
-    width: 35%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+  10% {
+      transform: translateY(-50px);
   }
-  textarea {
-    border-radius: 5px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    margin-top: 1%;
+  10% {
+    transform: translateY(-50px);
   }
-  input[id="email"] {
-    width: 35%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+}
+
+.what-we-do{
+  text-align: center;
+}
+
+#design, #development, #product{
+  display: none;
+}
+
+h2, h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.about{
+  padding-top: 30px;
+  text-align: center;
+  height: 270px;
+  width: 69%;
+  margin: auto;
+  line-height: 200%;
+}
+
+.services{
+  color: white;
+  height: 400px;
+  padding-top: 9%;
+  text-align: center;
+  margin: auto;
+  line-height: 300%;
+  font-weight: inherit;
+}
+
+.portfolio{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 225px;
+  margin-right: 215px;
+}
+
+.col-md-3 img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.col-md-3 .mediaQ{
+  display: none;
+}
+
+.row{
+  padding-bottom: 50px;
+}
+
+#overlay, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8{
+  display: none;
+  background-color:rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0.1%;
+  left: 4%;
+  color: white;
+  padding: 10% 50% 0 7%;
+  font-weight: 1000;
+  font-size: 1.7em;
+  width: 92%;
+  height: 100%;
+  outline: 3px solid white;
+  outline-offset: -17px;
+}
+
+.contacts{
+  color: white; 
+} 
+
+form{
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding-top: 2%;
+}
+form input, #comment{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+  
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#name, #email{
+  width: 47%;
+  margin-bottom: 1.5%;
+  margin-right: 1%;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+#comment{
+  width: 93%;
+  margin-left: 2% ;
+  background-color: transparent;
+  height: 300px;
+  border: 2px solid white;
+}
+
+::placeholder{
+  color: white;
+}
+
+.submit{
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.social ul{
+  list-style: none;
+  text-align: center;
+  display: inline;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.social img{
+  width: 70%;
+}
+
+.social li:hover{
+  animation: wobble 2s infinite;
+}
+
+@keyframes wobble {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(10);
   }
-  div[id="social"] {
-    margin-left: 35%;
+  10% {
+    transform: translateY(-10px);
   }
-  div[id=design] {
-    margin-left: 13%;
+  20% {
+    transform: translateY(-10px);
   }
-  div[id=development] {
-    margin-left: 45%;
-    margin-top: -9%;
+}
+
+footer{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: 200;
+}
+
+@media only screen and (max-width:800px) {
+  .about, .services, .what-we-do .social{ 
+    width:100%;
+    height: 100%;
   }
-  div[id=product] {
-    margin-left: 85%;
-    margin-top: -10%;
+  .about p{
+      width: 100%;
+      height: 100%;
   }
-  div[id="im1"] {
-    width: 100%;
+  .social img{
+      width: 50%;
   }
-  div[id="im2"] {
-    width: 100%;
-  }
-  p[id="pl"] {
-    text-align: center;
-    display: none;
-  }
-  .design-hidden {
-    display: none;
-  }
-  .development-hidden {
-    display: none;
-  }
-  .product-hidden {
-    display: none;
-  }
-  .col-md-3:hover {
-    opacity: 0.3;
-  }
-  .col-md-3 img {
-    width: 210px;
-  }
-  .message {
-    color: blue;
-    display: none;
-  }         
+}
