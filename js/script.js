@@ -1,6 +1,6 @@
-$("header").css('background-image', 'url(assets/backgrounds/h_img.jpg)');
-$(".services").css('background-image', 'url(assets/backgrounds/s_image.jpg)');
-$(".contacts").css('background-image', 'url(assets/backgrounds/c_image.jpg)');
+$("header").css('background-image', 'url(images/backgrounds/h_img.jpg)');
+$(".services").css('background-image', 'url(images/backgrounds/s_image.jpg)');
+$(".contacts").css('background-image', 'url(images/backgrounds/c_image.jpg)');
 
 $(document).ready(function(){
     $("#design-image").click(function(){
